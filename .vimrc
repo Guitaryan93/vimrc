@@ -7,6 +7,8 @@ set noerrorbells
 syntax on
 filetype plugin on
 
+" colorscheme setup and fallbacks
+set background=dark
 try
     colorscheme wildcharm
 catch
@@ -14,7 +16,6 @@ catch
         colorscheme darkblue
     catch
         " If neither colorscheme is available, reset to default
-        set background=dark
         highlight clear
         if exists("syntax_on")
             syntax reset
