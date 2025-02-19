@@ -7,6 +7,9 @@ set noerrorbells
 syntax on
 filetype plugin on
 
+" use ESC to get out of Vim Terminal
+tnoremap <ESC> <C-\><C-n>
+
 " colorscheme setup and fallbacks
 set background=dark
 try
